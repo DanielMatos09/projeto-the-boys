@@ -1,0 +1,164 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+body{
+    background: url(imagens/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px 48px;
+}
+
+.logo{
+    width: 150px;
+}
+
+.navegacacao ul{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.navegacacao > ul > li > a{
+     color: white;
+     font-size: 18px;
+     padding-bottom: 5px;
+     border-bottom: 2px solid transparent;
+     transition: all .6s;
+}
+
+.navegacacao > ul > li > a:hover{
+    border-bottom: 2px solid #138ecc;
+}
+
+.pesquisa{
+    width: 22px;
+    cursor: pointer;
+    filter: invert(1);
+}
+
+.perfil{
+    width: 35px;
+    cursor: pointer;
+    filter: invert(1);
+}
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 40em;
+    margin-top: 1.5em;
+}
+
+main section{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 2.5em;
+}
+
+.logoboys{
+     width: 25em;
+     margin: 2em 0;
+}
+
+.btn-box{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.btn{
+    padding: 20px 45px;
+    background: #425265;
+    color: white;
+    margin-bottom: 2em;
+    border-bottom: 2px solid white;
+    transition: all 0.5s;
+}
+
+.btn:hover{
+    background: #2d3846;
+}
+
+.btn:focus{
+    background: #2d3846;
+}
+
+.texto{
+    color: white;
+    text-align: justify;
+    line-height: 1.5em;
+}
+
+.btn-box2{
+    display: flex;
+    align-items: center;
+    color: white;
+    background: #0f79af;
+    padding: 15px 45px;
+    margin-top: 2em;
+    border-radius: 5px 5px 0px 0px;
+    border-bottom: 4px solid white;
+    font-size: 25px;
+    gap: 15px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.btn-box2:hover{
+    background: #138ecc;
+}
+
+.play{
+    width: 1.4em;
+    filter: invert(1);
+}
+
+.cards{
+    display: flex;
+    align-items: center;
+    flex-flow: row;
+    margin-left: 23em;
+    margin-top: 1.5em;
+}
+
+.card{
+    height: 180px;
+    max-width: 300px;
+    box-shadow: 12px 0px 32px 2px black;
+    margin-left: -120px;
+    cursor: pointer;
+    transition: all 0.25s ease-in-out;
+    overflow: hidden;
+}
+
+.card img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card:hover{
+    transform: translateY(-16px) rotate(3deg);
+}
+
+.card:hover ~ .card{
+    transform: translateX(140px);
+}
